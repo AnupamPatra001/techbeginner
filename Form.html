@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 2;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background: white;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Application Form for 2nd year students</h1>
+    <form action="/attachedwithForm.html">
+        <div>
+            <label for="name">Name*</label>
+            <input id="name" type="text" placeholder="Enter name" required>
+        </div>
+        <div>
+            <label for="fname">Father's Name</label>
+            <input id="fname" type="text" placeholder="Enter name">
+        </div>
+        <div>
+            <label for="phone">Phone number*</label>
+            <input id="phone" type="tel" placeholder="Enter phone number" required>
+        </div>
+        <div>
+            <label for="email">Email*</label>
+            <input id="email" type="email" placeholder="Enter email id" required>
+        </div>
+        <div>
+            <label for="password">Password*</label>
+            <input id="password" type="password" placeholder="Your password" required>
+        </div>
+        <div>
+            <label for="dob">D.O.B*</label>
+            <input id="dob" type="date">
+        </div>
+        <div>
+            <label for="gender">Gender*</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Disabled</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <p><b>Course</b></p>
+            <label for="diploma">Diploma</label>
+            <input id="diploma" type="radio" name="course" value="72k" required>
+            <label for="degree">Degree</label>
+            <input id="degree" type="radio" name="course" value="92k" required>
+            <label for="masters">Masters</label>
+            <input id="masters" type="radio" name="course" value="82k" required>
+        </div>
+        <div>
+            <label for="terms">I agree T&C
+                <a href="/T&C.html" target="_blank">T&C</a>
+            </label>
+            <input id="terms" type="checkbox" required>
+        </div>
+        <div>
+            <label for="comments">Comments</label>
+            <textarea placeholder="Enter comments" id="comments" rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
